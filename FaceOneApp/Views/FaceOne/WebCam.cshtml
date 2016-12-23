@@ -1,0 +1,28 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title></title>
+    <script type="text/javascript" src="~/Scripts/angular.js"></script>
+    <script type="text/javascript" src="~/Scripts/FaceOne/webcam.min.js"></script>
+    <script type="text/javascript" src="~/Scripts/FaceOne/FaceOneApp.js"></script>
+</head>
+<body>
+    <div ng-app="FaceOneApp" ng-controller="mainController">
+        <div class="alert alert-error ng-scope" ng-show="webcamError" style="">
+            <span>Webcam could not be started. Did you give access to it?</span>
+        </div>
+        <webcam channel="channel"
+                on-streaming="onSuccess()"
+                on-error="onError(err)"
+                on-stream="onStream(stream)"></webcam>
+        <button ng-click="makeSnapshot()">take picture</button>
+        <canvas id="snapshot" width="300" height="300"></canvas>
+    </div>
+</body>
+</html>
