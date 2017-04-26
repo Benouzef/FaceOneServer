@@ -21,8 +21,8 @@ namespace FaceOneApp.Controllers
 
             //set to Force.com user account that has API access enabled
             string sfdcUserName = "benoit.fillon@free.fr";
-            string sfdcPassword = "elmagi8kFc!";
-            string sfdcToken = "nbLIh9gGodn6snYmCUMzEu7Vd"; //"f4SjYKXHrVG2bI5gQFxUo6h8O";
+            string sfdcPassword = "elmagi9kFc!";
+            string sfdcToken = "ERmVfCjMFbbG9tlUd8l6UMQme"; //"nbLIh9gGodn6snYmCUMzEu7Vd"; //"f4SjYKXHrVG2bI5gQFxUo6h8O";
 
             //create login password value
             string loginPassword = sfdcPassword + sfdcToken;
